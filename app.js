@@ -2,8 +2,7 @@ let express = require("express");
 let app = express();
 let db = require("./db");
 
-module.exports = app;
+let UserController = require("./user/UserController");
+app.use("/users", UserController);
 
-// app.get("/", function(req, res) {
-//   res.send("Hello World!");
-// });
+module.exports = app;

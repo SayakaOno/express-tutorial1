@@ -1,4 +1,5 @@
+let dbUri = require("./data");
+
 let mongoose = require("mongoose");
-import dbUri from "./data";
 
 mongoose.connect(dbUri);
